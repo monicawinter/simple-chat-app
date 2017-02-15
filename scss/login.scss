@@ -1,0 +1,39 @@
+@import 'default';
+
+@mixin center() {
+	@include display(flex);
+	@include flex-direction(column);
+	@include justify-content(center);
+	@include align-items(center);
+}
+
+html,
+body {
+
+  .page {
+    @include center();
+    width: 100vw;
+    height: 100vh;
+    }
+
+    button {
+      background: transparent;
+      border: none;
+      border: 1px solid #000;
+      height: 25px;
+      width: 100px;
+    }
+
+    .login-button {
+      @include position(absolute);
+      top:
+
+      @include transform(translate3d(-50%, -50%, 0));
+    }
+
+  .circle {
+    border-radius: 50%;
+    width: 60px;
+    padding-bottom: .75em;
+  }
+}
