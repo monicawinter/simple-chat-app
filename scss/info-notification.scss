@@ -1,0 +1,12 @@
+@import 'colors';
+
+.notification {
+  @include position(relative);
+  -webkit-box-shadow: 0 3px 8px rgba(0, 0, 0, .25);
+  @include margin(0px 0px 5px 0px);
+  width: 410px;
+  height: 80px;
+  float: right;
+  clear: right;
+  background-color: $primary;
+}
