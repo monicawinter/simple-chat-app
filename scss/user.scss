@@ -1,6 +1,8 @@
+@import 'deafult'
+
 .user-list ul {
   list-style: none;
-  position: relative;
+  @include position(relative);
   width: 350px;
   float: right;
   margin: 0px;
@@ -11,7 +13,7 @@
 .person {
   font-size: 1.5em;
   text-transform: uppercase;
-  position: absolute;
+  @include position(absolute);
   top: 7px;
   left: 70px;
 }
