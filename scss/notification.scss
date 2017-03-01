@@ -25,10 +25,12 @@
 
 .notifications li {
   margin: 2.5px;
+  width: 400px;
 }
 
 .notifications li .notification {
   padding: 10px 25px;
+  text-align: center;
 }
 
 .notifications li .notification.connect{
