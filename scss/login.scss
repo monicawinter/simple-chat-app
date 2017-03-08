@@ -1,39 +1,97 @@
 @import 'default';
 
 @mixin center() {
-	@include display(flex);
-	@include flex-direction(column);
-	@include justify-content(center);
-	@include align-items(center);
+  @include display(flex);
+  @include flex-direction(column);
+  @include justify-content(center);
+  @include align-items(center);
 }
 
 html,
 body {
 
-  .page {
-    @include center();
-    width: 100vw;
-    height: 100vh;
+  @include center();
+  width: 100vw;
+  height: 100vh;
+
+  z-index: 100;
+
+  background: rgb(232, 79, 94);
+
+    .page {
+      @include center();
+      width: 30vw;
+      height: 50vh;
+      background: rgb(46, 172, 179);
+    }
+
+    input {
+      background: transparent;
+      border: none;
+      border: 1px solid #f7f0dd;
+      height: 25px;
+      width: 200px;
     }
 
     button {
       background: transparent;
       border: none;
-      border: 1px solid #000;
+      border: 1px solid #f7f0dd;
       height: 25px;
       width: 100px;
     }
 
+    textarea {
+      @include center();
+      width: 30vw;
+      height: 20vh;
+      margin-top: -2em;
+    }
+
     .login-button {
-      @include position(absolute);
-      top:
+      @include position(fixed);
+      top: 390px;
+      left: 770px;
 
       @include transform(translate3d(-50%, -50%, 0));
     }
 
-  .circle {
-    border-radius: 50%;
-    width: 60px;
-    padding-bottom: .75em;
-  }
+    .message-button {
+      @include position(fixed);
+      top: 630px;
+      left: 888px;
+
+      @include transform(translate3d(-50%, -50%, 0));
+    }
+
+    .circle {
+      border-radius: 50%;
+      width: 70px;
+      padding-bottom: .75em;
+    }
 }
+
+// div.login.show
+//  form.login-form
+//    div
+//      div
+//        input#username
+//        label
+//      /div
+//    /div
+//  /form
+// /div
+
+
+//.login {
+//  @include position(fixed);
+//  top: 0;
+//  left: 0;
+
+//  width: 100vw;
+//  height: 100vh;
+
+//  z-index: 100;
+
+//  background: rgba(147, 173, 18, 0.64);
+//}
