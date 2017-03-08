@@ -49,17 +49,17 @@ body {
     }
 
     .login-button {
-      @include position(fixed);
-      top: 390px;
-      left: 770px;
+      @include position(absolute);
+      top: 44%;
+      left: 53.5%;
 
       @include transform(translate3d(-50%, -50%, 0));
     }
 
     .message-button {
-      @include position(fixed);
-      top: 630px;
-      left: 888px;
+      @include position(absolute);
+      top: 99%;
+      left: 61.5%;
 
       @include transform(translate3d(-50%, -50%, 0));
     }
