@@ -59,7 +59,7 @@ body {
     .user-list-button {
       @include position(absolute);
       top: 5%;
-      left: 38%;
+      left: 28%;
 
       @include transform(translate3d(-50%, -50%, 0));
     }
