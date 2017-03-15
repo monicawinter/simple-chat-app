@@ -50,16 +50,24 @@ body {
 
     .login-button {
       @include position(absolute);
-      top: 44%;
+      top: 55%;
       left: 53.5%;
+
+      @include transform(translate3d(-50%, -50%, 0));
+    }
+
+    .user-list-button {
+      @include position(absolute);
+      top: 5%;
+      left: 38%;
 
       @include transform(translate3d(-50%, -50%, 0));
     }
 
     .message-button {
       @include position(absolute);
-      top: 99%;
-      left: 61.5%;
+      bottom: 0;
+      left: 75%;
 
       @include transform(translate3d(-50%, -50%, 0));
     }
@@ -75,6 +83,6 @@ body {
     .circle {
       border-radius: 50%;
       width: 70px;
-      padding-bottom: .75em;
+      margin-bottom: .75em;
     }
 }
