@@ -1,19 +1,56 @@
-@import 'deafult'
+@import 'default';
 
-.user-list ul {
-  list-style: none;
-  @include position(relative);
-  width: 350px;
-  float: right;
-  margin: 0px;
+.user-list {
+  @include position(fixed);
+
+  width: 500px;
+  height: 100vh;
+
   top: 0;
-  bottom: 0;
-}
+  right: 0;
+  padding: 2em;
+  background: #2eacb3;
 
-.person {
-  font-size: 1.5em;
-  text-transform: uppercase;
-  @include position(absolute);
-  top: 7px;
-  left: 70px;
+  ul {
+    list-style: none;
+    padding: 0;
+    @include margin(0);
+
+    @include display(flex);
+    @include flex-direction(column);
+    @include justify-content(flex-start);
+    @include align-items(left);
+
+    li {
+      @include position(relative);
+      width: 90%;
+      height: 75px;
+      margin-bottom: 10px;
+
+      font-size: 1.25em;
+      background: #fff;
+
+      .circle {
+        border-radius: 50%;
+        @include position(absolute);
+        width: 55px;
+
+        z-index: 2;
+      }
+
+      .person {
+        width: 100%;
+        height: 45px;
+        @include position(absolute);
+        left: 0;
+        top: 0;
+        padding-left: 80px;
+        padding-top: 15px;
+
+        z-index: 1;
+        background: #e84f5e;
+        color: #fff;
+      }
+    }
+  }
 }
